@@ -8,7 +8,8 @@ let dancingInterval;
 
 function yesClicked() {
   mainText.innerText = 'widzimy się czternastego o dwunastej pod Pręgierzem ; )';
-  gif.src = 'https://media1.tenor.com/m/VGWpu8FH82AAAAAC/happy-cat-yippee-cat.gif';
+  gif.src = cat2.gif;
+
 
   document.getElementById('buttons').style.display = 'none';
   noMessage.style.display = 'none';
@@ -16,7 +17,7 @@ function yesClicked() {
   if (!dancingInterval) {
     dancingInterval = setInterval(() => {
       if (gif.src.includes('VGWpu8FH82AAAAAC')) {
-        gif.src = 'https://media1.tenor.com/m/E3SNnvncEE0AAAAC/dance.gif';
+        gif.src = cat3.gif;
       } else {
         gif.src = 'https://media1.tenor.com/m/VGWpu8FH82AAAAAC/happy-cat-yippee-cat.gif';
       }
@@ -58,3 +59,4 @@ function createHearts() {
 }
 
 setInterval(createHearts, 600);
+
